@@ -5,6 +5,6 @@ const cors=require('cors')
 
 connectDatabase();
 // app.use(cors())
-app.listen(process.env.PORT, ()=>{
-    console.log(`server is running on http://localhost:${process.env.PORT}`);
+app.listen(process.env.PORT || 5000, ()=>{
+    console.log(`server is running`);
 })

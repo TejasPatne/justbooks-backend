@@ -4,7 +4,7 @@ const connectDatabase = () => {
 
     mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true }).then(
         (data) => {
-            console.log(`Mongodb connected with sever ${data.connection.host}`)
+            console.log(`Mongodb connected with sever`)
         }
     ).catch(
         (error) => {
