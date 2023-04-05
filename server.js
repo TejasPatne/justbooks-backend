@@ -4,7 +4,7 @@ const connectDatabase=require('./config/database')
 const cors=require('cors')
 
 connectDatabase();
-// app.use(cors())
+
 app.listen(process.env.PORT || 5000, ()=>{
     console.log(`server is running`);
 })
