@@ -10,7 +10,6 @@ exports.createBook= async (req, res, next)=>{
 
 exports.getAllBooks = async (req, res, next)=>{
     const books=await Book.find();
-    res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.status(201).json({
         success: true,
         books
