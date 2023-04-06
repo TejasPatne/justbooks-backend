@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 app.use(express.json())
 app.use(cors({
-    origin: "*",
+    origin: ["https://justbooks.onrender.com/", "http://localhost:3000/"],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false,
     optionsSuccessStatus: 200  }))
